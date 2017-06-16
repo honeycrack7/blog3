@@ -6,7 +6,7 @@ languageCode = "en"
 hasCJKLanguage = true
 
 publishDir = "docs"
-relativeurls = false
+relativeurls = true
 canonifyurls = true
 
 # Metadata format
