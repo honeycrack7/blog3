@@ -2,21 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Development on Strata</title>
-    <link>https://honeycrack7.github.io/blog3/categories/development/</link>
+    <link>/categories/development/</link>
     <description>Recent content in Development on Strata</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 17 Jun 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://honeycrack7.github.io/blog3/categories/development/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/development/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>test</title>
-      <link>https://honeycrack7.github.io/blog3/post/2017-06-17-test/</link>
+      <link>/post/2017-06-17-test/</link>
       <pubDate>Sat, 17 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://honeycrack7.github.io/blog3/post/2017-06-17-test/</guid>
+      <guid>/post/2017-06-17-test/</guid>
+      <description>プロットしてみましょう プロットのスクリプトを後からやっぱり見たいなって時、ありますよね？ ちなみに、ドキュメントの一番右上にCodeってボタン</description>
+    </item>
+    
+    <item>
+      <title>テスト</title>
+      <link>/post/test/</link>
+      <pubDate>Sat, 17 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/test/</guid>
       <description>プロットしてみましょう プロットのスクリプトを後からやっぱり見たいなって時、ありますよね？ ちなみに、ドキュメントの一番右上にCodeってボタン</description>
     </item>
     

@@ -2,56 +2,56 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Strata</title>
-    <link>https://honeycrack7.github.io/blog3/categories/</link>
+    <link>/categories/</link>
     <description>Recent content in Categories on Strata</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://honeycrack7.github.io/blog3/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Development</title>
-      <link>https://honeycrack7.github.io/blog3/categories/development/</link>
+      <link>/categories/development/</link>
       <pubDate>Sat, 17 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://honeycrack7.github.io/blog3/categories/development/</guid>
+      <guid>/categories/development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Golang</title>
-      <link>https://honeycrack7.github.io/blog3/categories/golang/</link>
+      <link>/categories/golang/</link>
       <pubDate>Sat, 17 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://honeycrack7.github.io/blog3/categories/golang/</guid>
+      <guid>/categories/golang/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ipsum</title>
-      <link>https://honeycrack7.github.io/blog3/categories/ipsum/</link>
+      <link>/categories/ipsum/</link>
       <pubDate>Thu, 17 Sep 2015 13:47:08 +0200</pubDate>
       
-      <guid>https://honeycrack7.github.io/blog3/categories/ipsum/</guid>
+      <guid>/categories/ipsum/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Lorem</title>
-      <link>https://honeycrack7.github.io/blog3/categories/lorem/</link>
+      <link>/categories/lorem/</link>
       <pubDate>Sat, 10 Oct 2015 13:07:31 +0200</pubDate>
       
-      <guid>https://honeycrack7.github.io/blog3/categories/lorem/</guid>
+      <guid>/categories/lorem/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>https://honeycrack7.github.io/blog3/categories/r/</link>
+      <link>/categories/r/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>https://honeycrack7.github.io/blog3/categories/r/</guid>
+      <guid>/categories/r/</guid>
       <description></description>
     </item>
     
