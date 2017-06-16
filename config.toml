@@ -1,0 +1,19 @@
+baseurl = "https://honeycrack7.github.io/blog3/"
+languageCode = "en-us"
+title = "Strata"
+# theme = "hugo-strata-theme"
+theme = "hugo-theme-minos"
+hasCJKLanguage = true
+publishDir = "docs"
+relativeurls = false
+
+# Menu links that appear on the left sidebar
+[[menu.main]]
+	name = "Home"
+	url  = "/"
+	weight = 0
+
+[[menu.main]]
+	name = "Blog"
+	url  = "post/"
+	weight = 10
