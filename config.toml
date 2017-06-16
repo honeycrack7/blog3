@@ -7,13 +7,21 @@ hasCJKLanguage = true
 publishDir = "docs"
 relativeurls = false
 
-# Menu links that appear on the left sidebar
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
 [[menu.main]]
 	name = "Home"
 	url  = "/"
+	weight = 10
+
+[[menu.main]]
+	name = "Category"
+	url  = "/categories"
 	weight = 0
 
 [[menu.main]]
-	name = "Blog"
-	url  = "post/"
-	weight = 10
+	name = "Tag"
+	url  = "/tags"
+	weight = 0

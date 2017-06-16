@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Golang on Strata</title>
-    <link>/categories/golang/</link>
+    <link>https://honeycrack7.github.io/blog3/categories/golang/</link>
     <description>Recent content in Golang on Strata</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 17 Jun 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/golang/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://honeycrack7.github.io/blog3/categories/golang/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>test</title>
-      <link>/post/2017-06-17-test/</link>
+      <link>https://honeycrack7.github.io/blog3/post/2017-06-17-test/</link>
       <pubDate>Sat, 17 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/2017-06-17-test/</guid>
+      <guid>https://honeycrack7.github.io/blog3/post/2017-06-17-test/</guid>
       <description>プロットしてみましょう プロットのスクリプトを後からやっぱり見たいなって時、ありますよね？ ちなみに、ドキュメントの一番右上にCodeってボタン</description>
     </item>
     
     <item>
       <title>テスト</title>
-      <link>/post/test/</link>
+      <link>https://honeycrack7.github.io/blog3/post/test/</link>
       <pubDate>Sat, 17 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/test/</guid>
+      <guid>https://honeycrack7.github.io/blog3/post/test/</guid>
       <description>プロットしてみましょう プロットのスクリプトを後からやっぱり見たいなって時、ありますよね？ ちなみに、ドキュメントの一番右上にCodeってボタン</description>
     </item>
     
