@@ -43,25 +43,25 @@
   </url>
   
   <url>
-    <loc>https://honeycrack7.github.io/blog3/categories/development/</loc>
-    <lastmod>2017-06-17T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://honeycrack7.github.io/blog3/tags/development/</loc>
     <lastmod>2017-06-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://honeycrack7.github.io/blog3/categories/golang/</loc>
+    <loc>https://honeycrack7.github.io/blog3/categories/development/</loc>
     <lastmod>2017-06-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://honeycrack7.github.io/blog3/tags/golang/</loc>
+    <lastmod>2017-06-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://honeycrack7.github.io/blog3/categories/golang/</loc>
     <lastmod>2017-06-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
