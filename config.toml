@@ -7,7 +7,7 @@ hasCJKLanguage = true
 
 publishDir = "docs"
 relativeurls = true
-canonifyurls = false
+canonifyurls = true
 
 # Metadata format
 # "yaml", "toml", "json"
