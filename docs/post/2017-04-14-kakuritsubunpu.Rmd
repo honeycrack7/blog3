@@ -1,0 +1,116 @@
+---
+title: 確率分布
+author: ~
+date: '2017-04-14'
+slug: ''
+categories: [統計]
+tags: [統計]
+description: ''
+featured: ''
+featuredalt: ''
+featuredpath: ''
+linktitle: ''
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,warning=FALSE,message=FALSE,comment=NA)
+```
+
+# 離散型
+## 一様分布
+## 二項分布
+ベルヌーイ試行をn回行って成功する回数Xが従う確率分布を二項分布と言う。Xが二項分布に従うとき$X～B(n,p)$と書く
+
+n回のベルヌーイ試行を行うときｋ回成功する確率は下記の通り
+$$
+P(X=k)=_{n}C_{k}p^k(1-p)^{n-k} (k=0,1,2,…,n)
+$$
+期待値は$E[X]=np$  
+分散は$Var(X)=np(1-p)$  
+
+## ポアソン分布
+
+# 連続型
+
+## 正規分布
+![](http://www.biwako.shiga-u.ac.jp/sensei/mnaka/ut/graph_normdist_percentile.jpg)
+
+
+###ガウシアンフィッティング
+[参考]
+http://d.hatena.ne.jp/n_shuyo/20091018/gaussian
+
+## z分布
+## t分布
+母平均の信頼区間の推定方法に使用される
+標本数が少ない（30以下）場合に使用する
+
+- 例
+自由度9(=10-1)のt分布において有意水準5%で両側検定を行う
+```{r}
+qt(0.025,9)
+```
+
+```{r}
+qt(0.975,9)
+```
+
+母平均μは`r qt(0.025,9)`≦μ≦`r qt(0.975,9)`の間に95%の確率で収まる
+
+```{r}
+x <- rnorm(10)
+t.test(x)
+```
+
+- グラフ
+```{r}
+x <- seq(-4, 4, 0.01)
+curve(dt(x, 9),-4,4,type="l")
+curve(dnorm(x),-4,4,type="l",lty=2,add=T)
+```
+
+## カイ2乗分布
+自由度nのカイ2乗値は以下のように定義される
+
+$$
+χ^2_{(n)} \equiv \displaystyle\sum_{i=1}^{n} z^2_{i} \equiv\ \frac{ \displaystyle\sum_{i=1}^{n}(x_{i}-μ)^2}{σ^2}
+$$
+
+標本分散から母分散を推定するために使われる。母分散は不偏分散から以下の様に推定される
+
+$$
+\frac{(n-1)\hat{\sigma}^2}{χ^2_(n-1,α/2)}
+\leq
+σ^2
+\leq 
+\frac{(n-1)\hat{\sigma}^2}{χ^2_(n-1,1-α/2)} 
+$$
+αは有意水準
+
+Rでは↓だけ
+
+上側2.5%
+```{r}
+qchisq(0.975,4)
+```
+下側2.5%
+```{r}
+qchisq(0.025,4)
+```
+母分散$σ^2$は信頼係数95%で`r qchisq(0.975,4)`≦$σ^2$≦`r  qchisq(0.025,4)`となる
+
+- グラフ
+```{r}
+x <- seq(-4, 4, 0.01)
+curve(dchisq(x, 4),0,40,type="l")
+```
+
+## F分布
+
+そもそもF値とは「標準席分布に従う2つの母集団から無作為抽出してきた2つのカイ2乗値の比である。
+
+[参考]
+http://bio-info.biz/statistics/distribution_f_distribution.html
+
+[参考]
+http://www.biwako.shiga-u.ac.jp/sensei/mnaka/ut/statdist.html
