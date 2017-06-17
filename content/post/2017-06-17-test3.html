@@ -1,0 +1,59 @@
+---
+title: テスト３
+author: ~
+date: '2017-06-17'
+slug: 'test3'
+categories: []
+tags: []
+Categories:
+  - Development
+  - Golang
+Description: ''
+Tags:
+  - development
+  - golang
+menu: ''
+output: 
+  html_document:
+    toc: true # table of content true
+    toc_float: true
+    depth: 3  # upto three depths of headings (specified by #, ## and ###)
+    number_sections: true  ## if you want number sections at each table header
+    theme: united  # many options for theme, this one is my favorite.
+    highlight: tango  # specifies the syntax highlighting style
+#    css: my.css   # you can add your custom css, should be in same folder
+---
+
+
+<div class="section level1">
+<h1>プロットしてみましょう</h1>
+<p>プロットのスクリプトを後からやっぱり見たいなって時、ありますよね？</p>
+<p>ちなみに、ドキュメントの一番右上にCodeってボタンが出てくる筈です。 これはドキュメントにあるコードを全て表示/非表示にするためのモノです。</p>
+<pre class="r"><code>x &lt;- seq(0, 10, 0.1)
+plot(x, exp(x), type = &quot;o&quot;)
+grid()</code></pre>
+<p><img src="/post/2017-06-17-test3_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+</div>
+<div id="toc" class="section level1">
+<h1>フローティングTOC</h1>
+<p>レスポンシブデザイン対応なので、狭めの環境だとドキュメントの頭に それなりに幅がある環境なら左にTOCが生成されます。</p>
+</div>
+<div class="section level1">
+<h1>タブセクション</h1>
+<p>ダダ長いドキュメントとはこれでおさらば…</p>
+<div id="sales-report" class="section level2 tabset">
+<h2>Sales Report</h2>
+<div id="daily" class="section level3">
+<h3>Daily</h3>
+<p>how do you think?</p>
+<pre class="r"><code>plot(cumsum(runif(1000, min = -1, max = 1)), type = &quot;l&quot;)</code></pre>
+<p><img src="/post/2017-06-17-test3_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+</div>
+<div id="monthly" class="section level3">
+<h3>Monthly</h3>
+<p>how do you think?</p>
+<pre class="r"><code>plot(cumsum(runif(1000, min = -1, max = 1)), type = &quot;l&quot;)</code></pre>
+<p><img src="/post/2017-06-17-test3_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+</div>
+</div>
+</div>
