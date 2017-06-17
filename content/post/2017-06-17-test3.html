@@ -14,23 +14,35 @@ Tags:
   - golang
 menu: ''
 output: 
-  html_document:
-    toc: true # table of content true
-    toc_float: true
-    depth: 3  # upto three depths of headings (specified by #, ## and ###)
-    number_sections: true  ## if you want number sections at each table header
-    theme: united  # many options for theme, this one is my favorite.
-    highlight: tango  # specifies the syntax highlighting style
-#    css: my.css   # you can add your custom css, should be in same folder
-  # blogdown::html_page:
-  #   toc: true
+  # html_document:
+  #   toc: true # table of content true
   #   toc_float: true
-  #   theme: united
-  #   code_folding: hide
-  #   md_extensions: -ascii_identifiers
+  #   depth: 3  # upto three depths of headings (specified by #, ## and ###)
+  #   number_sections: true  ## if you want number sections at each table header
+  #   theme: united  # many options for theme, this one is my favorite.
+  #   highlight: tango  # specifies the syntax highlighting style
+# #    css: my.css   # you can add your custom css, should be in same folder
+  blogdown::html_page:
+    toc: true
+  #   toc_float: true
+  #   theme: cerulean
+      # code_folding: hide
+      # md_extensions: -ascii_identifiers
 ---
 
 
+<div id="TOC">
+<ul>
+<li><a>プロットしてみましょう</a></li>
+<li><a href="#toc">フローティングTOC</a></li>
+<li><a>タブセクション</a><ul>
+<li><a href="#sales-report">Sales Report</a><ul>
+<li><a href="#daily">Daily</a></li>
+<li><a href="#monthly">Monthly</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
 <div class="section level1">
 <h1>プロットしてみましょう</h1>
 <p>プロットのスクリプトを後からやっぱり見たいなって時、ありますよね？</p>
