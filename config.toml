@@ -1,8 +1,8 @@
 baseurl = "https://honeycrack7.github.io/blog3/"
-DefaultContentLanguage = "en"
+DefaultContentLanguage = "ja"
 
 # Language
-languageCode = "en"
+languageCode = "ja-jp"
 hasCJKLanguage = true
 
 publishDir = "docs"
