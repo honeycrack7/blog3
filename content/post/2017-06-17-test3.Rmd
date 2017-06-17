@@ -22,6 +22,12 @@ output:
     theme: united  # many options for theme, this one is my favorite.
     highlight: tango  # specifies the syntax highlighting style
 #    css: my.css   # you can add your custom css, should be in same folder
+  # blogdown::html_page:
+  #   toc: true
+  #   toc_float: true
+  #   theme: united
+  #   code_folding: hide
+  #   md_extensions: -ascii_identifiers
 ---
 
 # プロットしてみましょう
