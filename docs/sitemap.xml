@@ -13,6 +13,11 @@
   </url>
   
   <url>
+    <loc>https://honeycrack7.github.io/blog3/post/test2/</loc>
+    <lastmod>2017-06-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://honeycrack7.github.io/blog3/post/migrate-from-jekyll/</loc>
     <lastmod>2015-10-10T13:07:31+02:00</lastmod>
   </url>
@@ -44,13 +49,11 @@
   </url>
   
   <url>
-    <loc>https://honeycrack7.github.io/blog3/categories/</loc>
-    <priority>0</priority>
+    <loc>https://honeycrack7.github.io/blog3/post/2017-06-17-test2/</loc>
   </url>
   
   <url>
-    <loc>https://honeycrack7.github.io/blog3/categories/development/</loc>
-    <lastmod>2017-06-17T00:00:00+00:00</lastmod>
+    <loc>https://honeycrack7.github.io/blog3/categories/</loc>
     <priority>0</priority>
   </url>
   
@@ -61,13 +64,19 @@
   </url>
   
   <url>
-    <loc>https://honeycrack7.github.io/blog3/categories/golang/</loc>
+    <loc>https://honeycrack7.github.io/blog3/categories/development/</loc>
     <lastmod>2017-06-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://honeycrack7.github.io/blog3/tags/golang/</loc>
+    <lastmod>2017-06-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://honeycrack7.github.io/blog3/categories/golang/</loc>
     <lastmod>2017-06-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

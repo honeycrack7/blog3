@@ -30,6 +30,15 @@
     </item>
     
     <item>
+      <title>テスト2</title>
+      <link>https://honeycrack7.github.io/blog3/post/test2/</link>
+      <pubDate>Sat, 17 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeycrack7.github.io/blog3/post/test2/</guid>
+      <description>プロットしてみましょう プロットのスクリプトを後からやっぱり見たいなって時、ありますよね？ ちなみに、ドキュメントの一番右上にCodeってボタン</description>
+    </item>
+    
+    <item>
       <title>Migrate from Jekyll</title>
       <link>https://honeycrack7.github.io/blog3/post/migrate-from-jekyll/</link>
       <pubDate>Sat, 10 Oct 2015 13:07:31 +0200</pubDate>
@@ -83,6 +92,15 @@ summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
       <guid>https://honeycrack7.github.io/blog3/post/creating-a-new-theme/</guid>
       <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
 We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://honeycrack7.github.io/blog3/post/2017-06-17-test2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://honeycrack7.github.io/blog3/post/2017-06-17-test2/</guid>
+      <description>テスト2code{white-space: pre;}pre:not([class]) {background-color: white;}if (window.hljs &amp;&amp; document.readyState &amp;&amp; document.readyState === &#34;complete&#34;) {window.setTimeout(function() {hljs.initHighlighting();}, 0);}h1 {font-size: 34px;}h1.title {font-size: 38px;}h2 {font-size: 30px;}h3 {font-size: 24px;}h4 {font-size: 18px;}h5 {font-size: 16px;}h6 {font-size: 12px;}.table th:not([align]) {text-align: left;}.</description>
     </item>
     
   </channel>

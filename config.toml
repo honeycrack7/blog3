@@ -17,6 +17,9 @@ metaDataFormat = "toml"
 # theme = "hugo-bootstrap-premium"
 theme = "hugo-theme-minos"
 
+toc = true
+# totop = true
+
 [taxonomies]
   category = "categories"
   tag = "tags"
