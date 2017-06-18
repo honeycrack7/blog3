@@ -1,0 +1,48 @@
+---
+title: hugo-theme-minosのissue
+author: ~
+date: '2017-06-17'
+slug: 'minos_issue'
+categories: []
+tags: []
+Categories:
+  - Hugo
+Description: ''
+Tags:
+  - Hugo
+menu: ''
+# output:
+#   blogdown::html_page:
+#     toc: true
+---
+
+<style type="text/css">
+#TOC {
+  color: purple; 
+}
+
+</style>
+
+
+
+#hugo-theme-minosというかHugoのissue
+##数式が表示できない
+themes > hugo-theme-minos > layouts > partials > footer.html
+を下記を追記
+
+            } else {
+                header.classList.add('mobile-on');
+            }
+        });
+    </script>
+    ★<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </footer>
+
+$$
+P(X=k)=_{n}C_{k}p^k(1-p)^{n-k} (k=0,1,2,…,n)
+$$
+
+$P(X=k)=_{n}C_{k}p^k(1-p)^{n-k} (k=0,1,2,…,n)$
+
+##toc_floatが効かない
+宿題

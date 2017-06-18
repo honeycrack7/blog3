@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>確率分布 // </title>
+
+        <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+        <meta property="og:title" content="確率分布" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="/2017/04/%E7%A2%BA%E7%8E%87%E5%88%86%E5%B8%83/" />
+    
+
+    <link href="" rel="alternate" type="application/rss+xml" title="" />
+    <link rel="shortcut icon" href="../../../favicon.png">
+
+    <link href="../../../webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+    <link href="../../../webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="../../../css/style.css">
+
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+    
+    <meta name="generator" content="Hugo 0.22" />
+</head>
+
+
+<body>
+<div id="container">
+    <header id="header">
+    <div id="header-outer" class="outer">
+        <div id="header-inner" class="inner">
+            <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
+            <a id="logo" class="logo-text" href="../../../"></a>
+            <nav id="main-nav">
+                
+                <a class="main-nav-link" href="../../../">Home</a>
+                
+                <a class="main-nav-link" href="../../../categories">Category</a>
+                
+                <a class="main-nav-link" href="../../../tags">Tag</a>
+                
+            </nav>
+            <nav id="sub-nav">
+                <div id="search-form-wrap">
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+    <section id="main" class="outer">
+        <article class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        <header class="article-header">
+            <h1 class="article-title" itemprop="name">確率分布</h1>
+        </header>
+        
+        <div class="article-meta">
+            <a href="../../../2017/04/%E7%A2%BA%E7%8E%87%E5%88%86%E5%B8%83/" class="article-date">
+                <time datetime='2017-04-14T00:00:00.000&#43;00:00' itemprop="datePublished">2017-04-14</time>
+            </a>
+            
+            
+            <div class="post-categories">
+                <div class="article-category">
+                    
+                    
+                    <a class="article-category-link" href="//categories/%E7%B5%B1%E8%A8%88">統計</a>
+                    
+                </div>
+            </div>
+            
+            
+        </div>
+        <div class="article-entry" itemprop="articleBody">
+            <div class="section level1">
+<h1>離散型</h1>
+<div class="section level2">
+<h2>一様分布</h2>
+</div>
+<div class="section level2">
+<h2>二項分布</h2>
+<p>ベルヌーイ試行をn回行って成功する回数Xが従う確率分布を二項分布と言う。Xが二項分布に従うとき<span class="math inline">\(X～B(n,p)\)</span>と書く</p>
+<p>n回のベルヌーイ試行を行うときｋ回成功する確率は下記の通り <span class="math display">\[
+P(X=k)=_{n}C_{k}p^k(1-p)^{n-k} (k=0,1,2,…,n)
+\]</span> 期待値は<span class="math inline">\(E[X]=np\)</span><br />
+分散は<span class="math inline">\(Var(X)=np(1-p)\)</span></p>
+</div>
+<div class="section level2">
+<h2>ポアソン分布</h2>
+</div>
+</div>
+<div class="section level1">
+<h1>連続型</h1>
+<div class="section level2">
+<h2>正規分布</h2>
+<div class="figure">
+<img src="http://www.biwako.shiga-u.ac.jp/sensei/mnaka/ut/graph_normdist_percentile.jpg" />
+
+</div>
+<div class="section level3">
+<h3>ガウシアンフィッティング</h3>
+<p>[参考] <a href="http://d.hatena.ne.jp/n_shuyo/20091018/gaussian" class="uri">http://d.hatena.ne.jp/n_shuyo/20091018/gaussian</a></p>
+</div>
+</div>
+<div id="z" class="section level2">
+<h2>z分布</h2>
+</div>
+<div id="t" class="section level2">
+<h2>t分布</h2>
+<p>母平均の信頼区間の推定方法に使用される 標本数が少ない（30以下）場合に使用する</p>
+<ul>
+<li>例 自由度9(=10-1)のt分布において有意水準5%で両側検定を行う</li>
+</ul>
+<pre class="r"><code>qt(0.025,9)</code></pre>
+<pre><code>[1] -2.262157</code></pre>
+<pre class="r"><code>qt(0.975,9)</code></pre>
+<pre><code>[1] 2.262157</code></pre>
+<p>母平均μは-2.2621572≦μ≦2.2621572の間に95%の確率で収まる</p>
+<pre class="r"><code>x &lt;- rnorm(10)
+t.test(x)</code></pre>
+<pre><code>
+    One Sample t-test
+
+data:  x
+t = 0.079575, df = 9, p-value = 0.9383
+alternative hypothesis: true mean is not equal to 0
+95 percent confidence interval:
+ -0.6994082  0.7504077
+sample estimates:
+ mean of x 
+0.02549973 </code></pre>
+<ul>
+<li>グラフ</li>
+</ul>
+<pre class="r"><code>x &lt;- seq(-4, 4, 0.01)
+curve(dt(x, 9),-4,4,type=&quot;l&quot;)
+curve(dnorm(x),-4,4,type=&quot;l&quot;,lty=2,add=T)</code></pre>
+<p><img src="../../../post/2017-04-14-kakuritsubunpu_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+</div>
+<div id="2" class="section level2">
+<h2>カイ2乗分布</h2>
+<p>自由度nのカイ2乗値は以下のように定義される</p>
+<p><span class="math display">\[
+χ^2_{(n)} \equiv \displaystyle\sum_{i=1}^{n} z^2_{i} \equiv\ \frac{ \displaystyle\sum_{i=1}^{n}(x_{i}-μ)^2}{σ^2}
+\]</span></p>
+<p>標本分散から母分散を推定するために使われる。母分散は不偏分散から以下の様に推定される</p>
+<p><span class="math display">\[
+\frac{(n-1)\hat{\sigma}^2}{χ^2_(n-1,α/2)}
+\leq
+σ^2
+\leq 
+\frac{(n-1)\hat{\sigma}^2}{χ^2_(n-1,1-α/2)} 
+\]</span> αは有意水準</p>
+<p>Rでは↓だけ</p>
+<p>上側2.5%</p>
+<pre class="r"><code>qchisq(0.975,4)</code></pre>
+<pre><code>[1] 11.14329</code></pre>
+<p>下側2.5%</p>
+<pre class="r"><code>qchisq(0.025,4)</code></pre>
+<pre><code>[1] 0.4844186</code></pre>
+<p>母分散<span class="math inline">\(σ^2\)</span>は信頼係数95%で11.1432868≦<span class="math inline">\(σ^2\)</span>≦0.4844186となる</p>
+<ul>
+<li>グラフ</li>
+</ul>
+<pre class="r"><code>x &lt;- seq(-4, 4, 0.01)
+curve(dchisq(x, 4),0,40,type=&quot;l&quot;)</code></pre>
+<p><img src="../../../post/2017-04-14-kakuritsubunpu_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+</div>
+<div id="f" class="section level2">
+<h2>F分布</h2>
+<p>そもそもF値とは「標準席分布に従う2つの母集団から無作為抽出してきた2つのカイ2乗値の比である。</p>
+<p>[参考] <a href="http://bio-info.biz/statistics/distribution_f_distribution.html" class="uri">http://bio-info.biz/statistics/distribution_f_distribution.html</a></p>
+<p>[参考] <a href="http://www.biwako.shiga-u.ac.jp/sensei/mnaka/ut/statdist.html" class="uri">http://www.biwako.shiga-u.ac.jp/sensei/mnaka/ut/statdist.html</a></p>
+</div>
+</div>
+
+        </div>
+
+        
+        
+        
+
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
+        <script>
+            (function() {
+                var $toc = $('#TableOfContents');
+                if ($toc.length > 0) {
+                    var $window = $(window);
+
+                    function onScroll(){
+                        var currentScroll = $window.scrollTop();
+                        var h = $('.article-entry h1, .article-entry h2, .article-entry h3, .article-entry h4, .article-entry h5, .article-entry h6');
+                        var id = "";
+                        h.each(function (i, e) {
+                            e = $(e);
+                            if (e.offset().top - 10 <= currentScroll) {
+                                id = e.attr('id');
+                            }
+                        });
+                        var active = $toc.find('a.active');
+                        if (active.length == 1 && active.eq(0).attr('href') == '#' + id) return true;
+
+                        active.each(function (i, e) {
+                            $(e).removeClass('active').siblings('ul').hide();
+                        });
+                        $toc.find('a[href="#' + id + '"]').parentsUntil('#TableOfContents').each(function (i, e) {
+                            $(e).children('a').addClass('active').siblings('ul').show();
+                        });
+                    }
+
+                    $window.on('scroll', onScroll);
+                    $(document).ready(function() {
+                        $toc.find('a').parent('li').find('ul').hide();
+                        onScroll();
+                        document.getElementsByClassName('article-toc')[0].style.display = '';
+                    });
+                }
+            })();
+        </script>
+        
+
+
+        
+        <footer class="article-footer">
+            <ul class="article-tag-list">
+                
+                <li class="article-tag-list-item">
+                    <a class="article-tag-list-link" href="//tags/%E7%B5%B1%E8%A8%88">統計
+                    </a>
+                </li>
+                
+            </ul>
+        </footer>
+        
+    </div>
+    <nav id="article-nav">
+    
+    <a href="../../../2017/06/test_md/" id="article-nav-newer" class="article-nav-link-wrap">
+        <div class="article-nav-title"><span>&lt;</span>&nbsp;
+            test_md
+        </div>
+    </a>
+    
+    
+</nav>
+</article>
+
+        
+    </section>
+    <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2017 &nbsp;
+            Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with theme <a href="https://github.com/carsonip/hugo-theme-minos">Minos</a>
+        </div>
+    </div>
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/tomorrow-night.min.css" integrity="sha256-2wL88NKUqvJi/ExflDzkzUumjUM73mcK2gBvBBeLvTk=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js" integrity="sha256-KbfTjB0WZ8vvXngdpJGY3Yp3xKk+tttbqClO11anCIU=" crossorigin="anonymous"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha256-ExtbCSBuYA7kq1Pz362ibde9nnsHYPt6JxuxYeZbU+c=" crossorigin="anonymous"></script>
+        <script>renderMathInElement(document.body);</script>
+    
+    <script>
+        document.getElementById('main-nav-toggle').addEventListener('click', function () {
+            var header = document.getElementById('header');
+            if (header.classList.contains('mobile-on')) {
+                header.classList.remove('mobile-on');
+            } else {
+                header.classList.add('mobile-on');
+            }
+        });
+    </script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</footer>
+</div>
+</body>
+</html>

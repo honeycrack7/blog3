@@ -2,7 +2,7 @@
 title: 確率分布
 author: ~
 date: '2017-04-14'
-slug: ''
+slug: 'kakuritsubunpu'
 categories: [統計]
 tags: [統計]
 description: ''
@@ -10,6 +10,12 @@ featured: ''
 featuredalt: ''
 featuredpath: ''
 linktitle: ''
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    code_folding: hide
+    md_extensions: -ascii_identifiers
 ---
 
 
@@ -53,23 +59,23 @@ P(X=k)=_{n}C_{k}p^k(1-p)^{n-k} (k=0,1,2,…,n)
 <li>例 自由度9(=10-1)のt分布において有意水準5%で両側検定を行う</li>
 </ul>
 <pre class="r"><code>qt(0.025,9)</code></pre>
-<pre><code>[1] -2.262157</code></pre>
+<pre><code>&gt;  [1] -2.262157</code></pre>
 <pre class="r"><code>qt(0.975,9)</code></pre>
-<pre><code>[1] 2.262157</code></pre>
+<pre><code>&gt;  [1] 2.262157</code></pre>
 <p>母平均μは-2.2621572≦μ≦2.2621572の間に95%の確率で収まる</p>
 <pre class="r"><code>x &lt;- rnorm(10)
 t.test(x)</code></pre>
-<pre><code>
-    One Sample t-test
-
-data:  x
-t = -1.0968, df = 9, p-value = 0.3012
-alternative hypothesis: true mean is not equal to 0
-95 percent confidence interval:
- -0.6144383  0.2131641
-sample estimates:
- mean of x 
--0.2006371 </code></pre>
+<pre><code>&gt;  
+&gt;   One Sample t-test
+&gt;  
+&gt;  data:  x
+&gt;  t = 2.4464, df = 9, p-value = 0.03698
+&gt;  alternative hypothesis: true mean is not equal to 0
+&gt;  95 percent confidence interval:
+&gt;   0.05639295 1.44141336
+&gt;  sample estimates:
+&gt;  mean of x 
+&gt;  0.7489032</code></pre>
 <ul>
 <li>グラフ</li>
 </ul>
@@ -95,10 +101,10 @@ curve(dnorm(x),-4,4,type=&quot;l&quot;,lty=2,add=T)</code></pre>
 <p>Rでは↓だけ</p>
 <p>上側2.5%</p>
 <pre class="r"><code>qchisq(0.975,4)</code></pre>
-<pre><code>[1] 11.14329</code></pre>
+<pre><code>&gt;  [1] 11.14329</code></pre>
 <p>下側2.5%</p>
 <pre class="r"><code>qchisq(0.025,4)</code></pre>
-<pre><code>[1] 0.4844186</code></pre>
+<pre><code>&gt;  [1] 0.4844186</code></pre>
 <p>母分散<span class="math inline">\(σ^2\)</span>は信頼係数95%で11.1432868≦<span class="math inline">\(σ^2\)</span>≦0.4844186となる</p>
 <ul>
 <li>グラフ</li>

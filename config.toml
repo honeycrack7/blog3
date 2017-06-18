@@ -17,8 +17,11 @@ metaDataFormat = "toml"
 # theme = "hugo-bootstrap-premium"
 theme = "hugo-theme-minos"
 
-toc = true
+toc = false
 totop = true
+
+[permalinks]
+  post = "/:year/:month/:slug/"
 
 [taxonomies]
   category = "categories"
@@ -38,3 +41,7 @@ totop = true
 	name = "Tag"
 	url  = "/tags"
 	weight = 0
+
+[params]
+	smartToc = true
+	katex = true

@@ -13,10 +13,10 @@
     
     <item>
       <title>確率分布</title>
-      <link>https://honeycrack7.github.io/blog3/post/2017-04-14-kakuritsubunpu/</link>
+      <link>https://honeycrack7.github.io/blog3/2017/04/kakuritsubunpu/</link>
       <pubDate>Fri, 14 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://honeycrack7.github.io/blog3/post/2017-04-14-kakuritsubunpu/</guid>
+      <guid>https://honeycrack7.github.io/blog3/2017/04/kakuritsubunpu/</guid>
       <description>離散型 一様分布 二項分布 ベルヌーイ試行をn回行って成功する回数Xが従う確率分布を二項分布と言う。Xが二項分布に従うとき\(X～B(n,p)\)</description>
     </item>
     

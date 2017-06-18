@@ -2,7 +2,7 @@
 title: 確率分布
 author: ~
 date: '2017-04-14'
-slug: ''
+slug: 'kakuritsubunpu'
 categories: [統計]
 tags: [統計]
 description: ''
@@ -10,10 +10,16 @@ featured: ''
 featuredalt: ''
 featuredpath: ''
 linktitle: ''
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    code_folding: hide
+    md_extensions: -ascii_identifiers
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE,warning=FALSE,message=FALSE,comment=NA)
+knitr::opts_chunk$set(echo = TRUE,warning=FALSE,message=FALSE,comment='> ')
 ```
 
 # 離散型

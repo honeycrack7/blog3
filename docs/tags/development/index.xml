@@ -12,39 +12,13 @@
     
     
     <item>
-      <title>test</title>
-      <link>https://honeycrack7.github.io/blog3/post/2017-06-17-test/</link>
+      <title>test_md</title>
+      <link>https://honeycrack7.github.io/blog3/2017/06/test_md/</link>
       <pubDate>Sat, 17 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://honeycrack7.github.io/blog3/post/2017-06-17-test/</guid>
-      <description>プロットしてみましょう プロットのスクリプトを後からやっぱり見たいなって時、ありますよね？ ちなみに、ドキュメントの一番右上にCodeってボタン</description>
-    </item>
-    
-    <item>
-      <title>テスト</title>
-      <link>https://honeycrack7.github.io/blog3/post/test/</link>
-      <pubDate>Sat, 17 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://honeycrack7.github.io/blog3/post/test/</guid>
-      <description>プロットしてみましょう プロットのスクリプトを後からやっぱり見たいなって時、ありますよね？ ちなみに、ドキュメントの一番右上にCodeってボタン</description>
-    </item>
-    
-    <item>
-      <title>テスト2</title>
-      <link>https://honeycrack7.github.io/blog3/post/test2/</link>
-      <pubDate>Sat, 17 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://honeycrack7.github.io/blog3/post/test2/</guid>
-      <description>プロットしてみましょう プロットのスクリプトを後からやっぱり見たいなって時、ありますよね？ ちなみに、ドキュメントの一番右上にCodeってボタン</description>
-    </item>
-    
-    <item>
-      <title>テスト３</title>
-      <link>https://honeycrack7.github.io/blog3/post/test3/</link>
-      <pubDate>Sat, 17 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://honeycrack7.github.io/blog3/post/test3/</guid>
-      <description>プロットしてみましょう フローティングTOC タブセクション Sales Report Daily Monthly プロットしてみましょう プロットのスクリプトを後からやっぱり見たいなって時、あ</description>
+      <guid>https://honeycrack7.github.io/blog3/2017/06/test_md/</guid>
+      <description>test_md $$ P(X=k)={n}C{k}p^k(1-p)^{n-k} (k=0,1,2,…,n) $$
+$P(X=k)={n}C{k}p^k(1-p)^{n-k} (k=0,1,2,…,n)$</description>
     </item>
     
   </channel>
